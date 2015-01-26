@@ -41,3 +41,4 @@ gem 'spring',        group: :development
 gem 'spree', github: 'spree/spree', branch: '2-4-stable'
 gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
+gem 'spree_simple_weight_calculator', github: 'freego/spree_simple_weight_calculator', branch: '2-4-stable'                                    
