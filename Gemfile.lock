@@ -7,6 +7,14 @@ GIT
       spree_core (~> 2.4.0)
 
 GIT
+  remote: git://github.com/spree-contrib/spree_mail_settings.git
+  revision: 51fce39805993363b2a13bdf1840cf18b57f3600
+  branch: 2-4-stable
+  specs:
+    spree_mail_settings (2.2.0)
+      spree_backend (~> 2.4.0)
+
+GIT
   remote: git://github.com/spree/spree.git
   revision: 834bd4107af67662ef26609abc46d57045b29392
   branch: 2-4-stable
@@ -321,6 +329,7 @@ DEPENDENCIES
   spree!
   spree_auth_devise!
   spree_gateway!
+  spree_mail_settings!
   spree_simple_weight_calculator!
   spring
   sqlite3
