@@ -1,5 +1,6 @@
 <div class="row">
 	<div class="col-md-12" id="image-container">
+	<%=image_tag "gym-bg.png", :style=>"width:100%;"%>
 
 		<%=image_tag "blue-shape-top.png", :id => "image"%>
 		<h1 id="text">Royal Mat is a pioneer in the  field of worn-out tire recycling, offering state-of-the-art products adapted to your needs</h1>
@@ -10,11 +11,17 @@
 
 
 
-<div data-hook="homepage_products">
+<div class="row" data-hook="homepage_products">
   <% cache(cache_key_for_products) do %>
     <%= render :partial => 'spree/shared/products', :locals => { :products => @products } %>
   <% end %>
 </div>
+
+<div class="row">
+	<%= render :partial => 'spree/shared/info' %>
+</div>
+
+
 
 
 
