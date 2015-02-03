@@ -9,7 +9,8 @@ $icon-font-path: "../../bootstrap/";
   background-size: cover;
   margin-bottom: $line-height-computed;
   #header {
-    background: rgba(9, 22, 33, 0.4);
+    // background: rgba(9, 22, 33, 0.4);
+    background: white;
     padding: $line-height-computed 0;
   }
   #logo {

@@ -1,17 +1,17 @@
 <div id="spree-header">
-
-  <header id="header" data-hook>
-    <div class="container">
-      <div class="row">
-        <figure id="logo" class="col-md-4" data-hook>
-          <%= logo %>
-        </figure>
-        <%= render :partial => 'spree/shared/nav_bar' %>
+<div class="row">
+  <div class="col-md-12">
+    <%#image_tag 'gym-bg.png', :class => "course-type-logo"%>
+    <header id="header" data-hook>
+      <div class="container">
+        <div class="row">
+          <figure id="logo" class="col-md-4" data-hook>
+            <%= image_tag 'rm-logo.png'%>
+          </figure>
+          <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
+        </div>
       </div>
-    </div>
-  </header>
-  <div class="container">
-    <%= render :partial => 'spree/shared/main_nav_bar' if store_menu? %>
-  </div>
+    </header>  
+</div>
 
 </div>
