@@ -45,7 +45,7 @@ $icon-font-path: "../../bootstrap/";
 .alert-notice { @extend .alert-info; }
 
 .product-body {
-  height: 170px;
+  height: 300px;
 }
 .progress-steps {
   margin-top: $line-height-computed;
@@ -98,4 +98,26 @@ h1 {
   }
 }
 
+.info{
+  color:white;
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+    color: white
+  }
+}
 
+.product-name{
+  font-size: 40px;
+  color: #053b77; 
+}
+
+.info-button{
+  background: #02853e;
+  border: none;
+}
+
+.panel-footer{
+  background: none;
+  border: none;
+}

@@ -1,0 +1,28 @@
+<div class="row">
+<h1 style="text-align:center; color: #053b77; ">Our Products</h1>
+<% if products.any? %>
+<div id="products" class="row" data-hook>
+  <% products.each do |product| %>
+    <% url = product_url(product, taxon_id: @taxon.try(:id)) %>
+    <div id="product_<%= product.id %>" class="col-md-4 col-sm-6 product-list-item" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+      <div class="panel panel-default" style="background:none; border:none">
+        
+          <div class="panel-body text-center product-body">
+            <%= link_to large_image(product, itemprop: "image"), url, itemprop: 'url' %><br/>
+            <div class="product-name">
+              <%= product.name%>
+            </div>
+          </div>
+          <div class="panel-footer text-center">
+            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+              <button type="button" class="btn btn-primary btn-lg info-button" ><%= link_to "Get Info", url, class: 'info', itemprop: "name", title: "product.name" %></button>
+            </span>
+          </div>
+        
+      </div>
+    </div>
+  <% end %>
+  <% reset_cycle("classes") %>
+</div>
+<% end %>
+</div>
