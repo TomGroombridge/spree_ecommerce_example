@@ -12,7 +12,7 @@
 Spree.config do |config|
        # Example:
        # Uncomment to override the default site name.
-       config.site_name = "Royal Mat"
+
 
       #S3 configuration
       if Rails.env.production? then
@@ -42,4 +42,3 @@ Spree.config do |config|
      end
 end
 Spree.user_class = "Spree::User"
-end
