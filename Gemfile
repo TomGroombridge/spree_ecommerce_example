@@ -31,6 +31,8 @@ gem 'rails_12factor', group: :production
 
  gem 'pg'
 
+ gem 'aws-sdk'
+
 
 
 
@@ -51,4 +53,4 @@ gem 'spree_gateway', github: 'spree/spree_gateway', branch: '2-4-stable'
 gem 'spree_auth_devise', github: 'spree/spree_auth_devise', branch: '2-4-stable'
 gem 'spree_bootstrap_frontend', github: '200Creative/spree_bootstrap_frontend', branch: '2-4-stable'
 gem 'spree_mail_settings', github: 'spree-contrib/spree_mail_settings', branch: '2-4-stable'
-gem 'spree_simple_weight_calculator', github: 'freego/spree_simple_weight_calculator', branch: '2-4-stable'                                    
+gem 'spree_simple_weight_calculator', github: 'freego/spree_simple_weight_calculator', branch: '2-4-stable'
