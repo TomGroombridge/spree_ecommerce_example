@@ -21,7 +21,7 @@ Spree.config do |config|
           attachment_config = {
           s3_credentials: {
             access_key_id: ENV["S3_KEY"],
-            secret_access_key: ENV["S3_SECRET"],
+            secret_access_key:  	,
             bucket: ENV["S3_BUCKET"],
           },
 

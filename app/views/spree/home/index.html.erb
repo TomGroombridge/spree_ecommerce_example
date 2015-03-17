@@ -1,6 +1,37 @@
 <div class="row">
+	<div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" style="z-index:inherit">
+        <div class="modal-content">
+          <div class="modal-header">
+	          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+	          <h4 class="modal-title" id="gridSystemModalLabel">Contact us</h4>
+	        </div>
+	        <div class="modal-body">
+	        	<div class="container-fluid">
+	            <div class="row">
+	              <div class="col-md-8">
+	              	<p>Please get in touch to place an order, ask for advice or to simply give us your feedback. We will endeavour to answer any questions you may have, and can be relied upon to make sure you get the very best from our excellent products.</p>
+				        	<p>AQUILA CORPORATION (UK) LTD</p>
+				        	<p><a href="mailto:sales@aquamax.co.uk">sales@aquamax.co.uk</a></p>
+				        	<p>Ingleside House</p>
+				        	<p>5 Beeches Road</p>
+				        	<p>Cirencester</p>
+				        	<p>Gloucestershire</p>
+				        	<p>GL7 1BN</p>
+	              </div>
+	              <div class="col-md-4">
+	              <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script><div style="overflow:hidden;height:290px;width:100%;"><div id="gmap_canvas" style="height:290px;width:100%px;"></div><style>#gmap_canvas img{max-width:none!important;background:none!important}</style><a class="google-map-code" href="http://wordpress-hosting.me" id="get-map-data">free hosting partners</a></div><script type="text/javascript"> function init_map(){var myOptions = {zoom:14,center:new google.maps.LatLng(51.7164788,-1.9594601999999668),mapTypeId: google.maps.MapTypeId.ROADMAP};map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);marker = new google.maps.Marker({map: map,position: new google.maps.LatLng(51.7164788, -1.9594601999999668)});infowindow = new google.maps.InfoWindow({content:"<b>Ingleside House</b><br/>5 Beeches Road<br/>GL7 1BN Cirencester" });google.maps.event.addListener(marker, "click", function(){infowindow.open(map,marker);});infowindow.open(map,marker);}google.maps.event.addDomListener(window, 'load', init_map);</script>
+	              </div>
+	            </div>
+
+	        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 	<div class="col-md-12" id="image-container">
-	<%=image_tag "gym-bg-2.png", :style=>"width:100%;"%>
+	<%= image_tag "gym-bg-2.png", :style=>"width:100%;"%>
 
 		<%=image_tag "blue-shape-top.png", :id => "image"%>
 		<h1 id="text">Royal Mat is a pioneer in the  field of worn-out tire recycling, offering state-of-the-art products adapted to your needs</h1>
@@ -26,7 +57,7 @@
 </div>
 
 <div class="row">
-	<%= render :partial => 'spree/shared/contact_us' %>		
+	<%= render :partial => 'spree/shared/contact_us' %>
 </div>
 
 
