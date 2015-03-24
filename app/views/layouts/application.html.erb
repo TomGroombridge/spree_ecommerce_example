@@ -11,10 +11,10 @@
     <%= render partial: 'spree/shared/header' %>
 
     <div class="container">
-
+      <iframe src="https://staging-courseiam.herokuapp.com/users/1?embed=userCourses"></iframe>
       <div class="row" data-hook>
-      <!-- unsure if this is need or not so have commented it out --> 
-        <%# breadcrumbs(@taxon) %>        
+      <!-- unsure if this is need or not so have commented it out -->
+        <%# breadcrumbs(@taxon) %>
 
         <div id="content" class="<%= !content_for?(:sidebar) ? "col-sm-12" : "col-sm-8 col-md-9" %>" data-hook>
           <%= flash_messages %>
