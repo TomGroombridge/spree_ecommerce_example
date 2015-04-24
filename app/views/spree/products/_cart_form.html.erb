@@ -29,10 +29,10 @@
     <% if @product.price_in(current_currency) and !@product.price.nil? %>
       <div data-hook="product_price" class="col-md-5">
         <div id="product-price">
-          <h4 class="product-section-title"><%= Spree.t(:price) %><span style="font-size:12px">excluding delivery</span></h4>
+          <h4 class="product-section-title"><%= Spree.t(:price) %><span style="font-size:12px"> excluding delivery</span></h4>
           <div>
             <span class="lead price selling" itemprop="price">
-              <%= display_price(@product) %><span style="font-size:12px">including VAT</span>
+              <%= display_price(@product) %><span style="font-size:12px"> including VAT</span>
             </span>
             <span itemprop="priceCurrency" content="<%= @product.currency %>"></span>
           </div>
@@ -47,7 +47,7 @@
 
         <div class="add-to-cart">
           <br/>
-          <div class="input-group">
+          <div class="input-group" style="width: 180px">
             <%= number_field_tag :quantity, 6, :class => 'title form-control', :min => 6, :max => 36 %>
             <span class="input-group-btn">
               <%= button_tag :class => 'btn btn-success', :id => 'add-to-cart-button', :type => :submit do %>
