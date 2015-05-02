@@ -16,9 +16,9 @@
           </div>
           <div class="panel-footer text-center">
             <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-              <%# if product.id == 1 %>
-                <button type="button" class="btn btn-primary btn-lg info-button" style="margin-top:10px"><%= link_to "Mat Specification", url, class: 'info', itemprop: "name", title: "product.name" , :id => "#{product.id}"%></button>
-              <%# end %>
+              <button type="button" class="btn btn-primary btn-lg info-button" style="margin-top:10px">
+                <a href="https://royal-mat.herokuapp.com/products/<%= product.id %>" class="info">Mat Specification</a>
+              </button>
             </span>
           </div>
 
