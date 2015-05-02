@@ -16,7 +16,9 @@
           </div>
           <div class="panel-footer text-center">
             <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-              <button type="button" class="btn btn-primary btn-lg info-button" style="margin-top:10px"><%= link_to "Mat Specification", url, class: 'info', itemprop: "name", title: "product.name" %></button>
+              <%# if product.id == 1 %>
+                <button type="button" class="btn btn-primary btn-lg info-button" style="margin-top:10px"><%= link_to "Mat Specification", url, class: 'info', itemprop: "name", title: "product.name" , :id => "#{product.id}"%></button>
+              <%# end %>
             </span>
           </div>
 
