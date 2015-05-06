@@ -31,7 +31,7 @@
         <div id="product-price">
           <h4 class="product-section-title"><%= Spree.t(:price) %><span style="font-size:12px"> excluding delivery</span></h4>
           <div>
-            <span class="lead price selling" itemprop="price">
+            <span class="lead price selling" itemprop="price" style="font-weight:bold">
               <%= display_price(@product) %><span style="font-size:12px"> including VAT</span>
             </span>
             <span itemprop="priceCurrency" content="<%= @product.currency %>"></span>
